@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視界</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>  <!-- 頂端選單列 -->
+        <ul class="nav_center">
+            <li><a href="home.html"><img src="image/HOME.png" style="width: 30px;"></a></li>
+            <li><a href="ABOUTUS.html">ABOUT US</a></li>
+            <li><a href="CONTACT US.html">CONTACT US</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="shop.html">ITEMS</a>
+                    <div class="dropdown-content">
+                        <a href="OLENS.html">OLENS</a>
+                        <a href="LENSME.html">LENSME</a>
+                        <a href="I-DOL.html">I-DOL</a>
+                    </div>
+                </div>
+                <li><a href="MEMBER.html">MEMBER</a></li>
+            </li>
+            <li><a href="LOG IN.html" class="nav_member">LOG IN</a></li>
+            <li><a href="cart.html"><img src="image/CART.png" style="width: 30px;"></a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <!--理念-->
+        <section class="top-wrapper">
+            <img src="image/banner.png" style="width:100%;">
+        </section>
+        <!--幻燈片-->
+        <section>
+            <div class="section1">
+                <div class="slideshow-container">
+                    <!--第一張幻燈片-->
+                    <div class="mySlides fade" style="display: block;">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="image/20200518192612_1.jpg" style="width: 100%; height: 550px;">
+                    </div>
+                    <!--第二張幻燈片-->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="image/messageImage_1671653694862.jpg" style="width: 100%; height: 550px;">
+                    </div>
+                    <!--第三張幻燈片-->
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="image/messageImage_16716542219421.jpg" style="width: 110%; height: 550px;">
+                    </div>
+                </div>
+                <br>
+                <!--點點-->
+                <div style="text-align:center">
+                    <span class="dot active"onclick="currentSlide(1)"></span>
+                    <span class="dot"onclick="currentSlide(2)"></span>
+                    <span class="dot"onclick="currentSlide(3)"></span>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+    
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 4000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </section>
+        <!--排行榜-->
+        <div class="HOT">
+            <h2>HOT</h2>
+            <section class="card" id="">
+                <div class="HOT1" >
+                    <!--herf裡放產品連結， scr放產品圖片，名字改品名-->
+                    <a href="OD01.html"><img src="image/leaderboard/01.jpg" style="width: 300px;height: 300px;"></a> 
+                    <h4>ViVi Ring 1Day Brown</h4>
+                </div>
+            
+            </section>
+  
+            <section class="card" >
+                    <div class="HOT2">
+                        <!--herf裡放產品連結， scr放產品圖片，名字改品名-->
+                        <a href="ID03.html"><img src="image/leaderboard/02.png" style="width: 300px;height: 300px"></a> 
+                    </div>
+                    <h4>Yurial Water Brown 1 Day 水光玻璃珠</h4>
+                </section>
+        
+            <section class="card" >
+                    <div class="HOT3" >
+                        <!--herf裡放產品連結， scr放產品圖片，名字改品名-->
+                        <a href="LD01.html"><img src="image/leaderboard/03.jpg" style="width: 300px;height: 300px"></a> 
+                    </div>
+                    <h4>LENS ME Makeover Bayvely Brown</h4>
+                </section>
+        </div>
+      </main>
+      <!--尾巴-->
+      <footer>
+        <p> Copyright © CYIM.</p>
+      </footer>
+</body>
+</html>

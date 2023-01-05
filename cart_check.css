@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: qi;
+    src: url(font/drechifont-monospaced.ttf);
+    src: url(font/drechifont-monospaced.woff);
+}
+
+@font-face {
+    font-family: blackti;
+    src: url(font/中黑體.ttc);
+}
+
+@font-face {
+    font-family: Cooper Std;
+    src: url(font/AnyConv.com__CooperBlackStd.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* 網頁頂端藍色區塊 */
+nav {
+    background-color: #C3D6F2;
+    text-align: center;
+    /* padding: 5%; */
+    font-family: Cooper Std;
+}
+
+/* 選單列文字 */
+nav a {
+    padding: 14px 25px;
+    display: inline-block;
+    color: white;
+}
+
+/* 選單列變色 */
+nav a:hover {
+
+    color: #789cce;
+
+}
+
+.nav_center li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_center {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav,
+ul,
+li,
+a {
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ITEMS子選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc6d0;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd6da
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav_right {
+    position: absolute;
+    right: 180px;
+}
+.bg{
+    text-align: center;
+    color:black;
+    font-family: qi;
+    /* text-decoration: underline; */
+    /* font-size: 40px; */
+    padding: 30px;
+    /* background-color: #C3D6F2; */
+}
+*{
+    margin: 0px;
+}
+.check{
+    display: flex;
+    justify-content: center;
+}
+.check-left{
+    width: 800px;
+    /* margin-right: 20px; */
+    padding: 20px;
+}
+#myOrder{
+    font-size: 20px;
+    padding: 0 0 18px 20px;
+    font-weight:bold;
+}
+.item-inside{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 25px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.item_img{
+    padding-right: 5%;
+}
+.item-img img{
+    width: 180px;
+}
+.item-detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: right ;
+    font-size: initial;
+    padding-left: 30px;
+    /* padding-bottom: 30%; */
+}
+.item-title{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    padding-right: 10%;
+    /* padding-bottom: 50%; */
+}
+.item-spam1{
+    margin: 50%;
+    width: 50%;
+}
+.item-inside .qty{
+    width: 70%;
+    padding-left: 5px;
+    margin-top: 30%;
+    border: 0.5px solid;
+}
+.minus,
+.add {
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 42px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    /* font-weight: bolder; */
+}
+
+.num {
+    justify-content: space-between;
+    background-color: #ffffff;
+    outline: 1px;
+    cursor: text;
+    width: 30%;
+    height: 42px;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    border: none;
+    font-weight: bolder;
+}
+.block1{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+}
+/* .block{
+    /* justify-content: center; */
+    /* width: 800px;
+    size: 100px;
+    background-color: #ffd6da;
+    border-radius: 1%;
+    padding: 3%;
+    line-height: 30px;
+    /* margin: 5%; */
+    /* padding-bottom: 30px;
+}  */ 
+.block_p{
+    font-family: Arial,cwTeXYen;
+    color: white;
+    font-size: 35px;
+    padding: 0px 0px 5px 5px;
+    margin-bottom: 5px;
+}
+footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: Adobe Caslon Pro;
+    background-color: #C3D6F2;
+    color: white;
+    padding: 5px;
+}
+.block_l{
+    color: white;
+}
+.item_w{
+    height: 50%;
+    padding-top: 10%;
+}
+.submit{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.submit input{
+    /* float: right; */
+    width: 150px;
+    border: none;
+    background-color:#C3D6F2;
+    color:white;
+    font-size: 25px;
+    /* text-align: center; */
+    font-family: Arial,cwTeXYen;
+    border-radius: 5%;
+    /* margin-left: 3%;
+    margin-top: 74px */
+}
+::placeholder{
+    color: #f1aeb6;
+}
+.submit input:hover{
+    background-color: #adc8f0;
+}
+.price{
+    display: flex;
+}
+.total_money{
+    float: right;
+}
+.money{
+    float: right;
+    font-size: 30px;
+    display: flex;
+}
+.money input{
+    height: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    width: 470px;
+    padding: 5px;
+    margin: 10px;
+    /* border-bottom: solid rgb(248, 229, 229); */
+    /* color: white; */
+    /* outline-color: #d6606e; */
+}
+.block{
+    /* display: flex; */
+    size: 100px;
+    background-color: #ffd6da;
+    border-radius: 1%;
+    padding: 3%;
+    line-height: 30px;
+    /* margin-left: 27%; */
+    /* margin: 5% 20% 5% 20%; */
+    width: 500px;
+    padding-bottom: 20px;
+}
+.form1 {
+    color: white;
+    padding-bottom: 20px;
+}
+h2{
+    padding-bottom: 20px;
+    padding-left: 4%;
+}
+.form1 input{
+    height: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    width: 470px;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: solid rgb(248, 229, 229);
+    color: white;
+    outline-color: #d6606e;
+}
+.tr1{
+    padding-left: 4%;
+    float: left;
+}
+::placeholder{
+    color: #f1aeb6;
+}
+/* .submit input{
+    width: 150px;
+    border: none;
+    background-color:#C3D6F2;
+    color:white;
+    font-size: 25px;
+    /* text-align: center; */
+    /* font-family: Arial,cwTeXYen;
+    border-radius: 5%;
+    margin-left: 45%;
+    margin-top: 20px;
+    text-align: center!important;
+    margin-bottom:10% ;
+
+}
+::placeholder{
+    color: #f1aeb6;
+}
+.submit input:hover{
+    background-color: #adc8f0;
+} */ 
+.sum{
+    padding-top: 40px;
+    display: flex;
+    /* width: 50px; */
+}
+.sum input{
+    border: none;
+    background-color: white;
+    width: 50px;
+}
+button{
+    padding: 5px;
+    background-color: white;
+    border: none;
+}
+.btn button:hover{
+    color: gray;
+}
+

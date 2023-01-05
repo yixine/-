@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN｜視界</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>  <!-- 頂端選單列 -->
+        <ul class="nav_center">
+            <li><a href="home.html"><img src="image/HOME.png" style="width: 30px;"></a></li>
+            <li><a href="ABOUTUS.html">ABOUT US</a></li>
+            <li><a href="CONTACT US.html">CONTACT US</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="shop.html">ITEMS</a>
+                    <div class="dropdown-content">
+                        <a href="OLENS.html">OLENS</a>
+                        <a href="LENSME.html">LENSME</a>
+                        <a href="I-DOL.html">I-DOL</a>
+                    </div>
+                </div>
+                <li><a href="MEMBER.html">MEMBER</a></li>
+            </li>
+            <li><a href="LOG IN.html" class="nav_member">LOG IN</a></li>
+            <li><a href="cart.html"><img src="image/CART.png" style="width: 30px;"></a></li>
+        </ul>
+      </nav>
+      <article>
+        <div class="login">
+            <form method="post" action="">
+                <h1>LOG IN</h1>
+                <p>帳號<input type="email" name="user_email" placeholder="E-mail" id="user_email" maxlength="40" size="30" required=""> </p>
+                <!--帳號-->
+                <p>密碼<input type="password" name="user_password" placeholder="password" size="30" maxlength="20" id="user_password" required=""></p>
+                <!--密碼-->
+                <div class="button click">
+                    <input class="buttonLOOK" type="submit" value="登入" onclick="Submit()">
+                    <input class="buttonLOOK" type="reset" value="重填">
+                </div>
+                <div class="register">
+                    是否還未註冊？<a href="register.html">點此前往註冊！</a>
+                </div>
+            </form>
+        </div>
+      </article>
+      <footer> 
+        <p> Copyright © CYIM.</p>
+    </footer>
+</body>
+</html>

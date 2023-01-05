@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: qi;
+    src: url(font/drechifont-monospaced.ttf);
+    src: url(font/drechifont-monospaced.woff);
+}
+
+@font-face {
+    font-family: blackti;
+    src: url(font/中黑體.ttc);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 網頁頂端藍色區塊 */
+nav {
+    background-color: #C3D6F2;
+    text-align: center;
+    padding: 14px;
+    font-family: Cooper Std;
+}
+
+/* 選單列文字 */
+nav a {
+    padding: 14px 25px;
+    display: inline-block;
+    color: white;
+}
+
+/* 選單列變色 */
+nav a:hover {
+
+    color: #789cce;
+
+}
+
+.nav_center li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_center {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav,
+ul,
+li,
+a {
+    color: black;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ITEMS子選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc6d0;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd6da
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav_right {
+    position: absolute;
+    right: 180px;
+}
+
+.title h1 {
+    margin: 50px 0px 50px 0px;
+    font-family: qi;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.introducebackground {
+    border-radius: 10px;
+    display: flex;
+}
+
+.introduce {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgblock {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 10px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+
+.img {
+    width: 250px;
+    height: 250px;
+}
+
+.img img {
+    transform: scale(1, 1);
+    transition: all .5s ease-out;
+    height: 350px;
+}
+
+.name h1 {
+    margin: 8px 0px 0px 0px;
+    font-family: blackti;
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.name h2 {
+    font-family: blackti;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-family: blackti;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 10px 0px 10px 0px;
+}
+
+.quantity {
+    font-family: blackti;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+
+.flex {
+    display: flex;
+}
+
+.qty {
+    display: flex;
+    width: 150px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.num {
+    width: 25px;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.qty input {
+    font-size: 16px;
+    background: none;
+    border: none;
+    height: 40px;
+    margin: 0px 3px;
+    text-align: center;
+}
+
+.flex button {
+    width: 150px;
+    border: none;
+    height: 45px;
+    text-align: center;
+}
+
+.diopters select {
+    width: 310px;
+    height: 40px;
+}
+
+.diopters option {
+    padding: 10px;
+}
+
+
+.addto button {
+    width: 310px;
+    border: none;
+    height: 45px;
+    text-align: center;
+}
+
+.minus,
+.add {
+    justify-content: space-between;
+    background-color: white;
+    width: 50px;
+    height: 42px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    font-weight: bolder;
+}
+
+.quant,
+.buy {
+    padding: 15px;
+    justify-content: space-between;
+    font-family: blackti;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border: solid black 1px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 10px;
+
+}
+
+.intro {
+    width: 700px;
+    height: 230px;
+    /* margin-left: 430px; */
+    text-align: center;
+    border: dashed black 2px;
+    /* background-color: #ffd6da; */
+}
+
+.content {
+    /* margin-top: 10px; */
+    font-family: blackti;
+}
+
+.content h2 {
+    padding: 15px;
+    color: #353535;
+}
+
+.content p {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    color: rgb(119, 119, 119);
+}
+
+/*留言區*/
+.intro-back2 {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 650px;
+    padding: 100px 0px;
+}
+
+.p-comment {
+    width: 450px;
+    margin-right: 50px;
+}
+
+.p-comment h1 {
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 2px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.p-comment p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+}
+
+.p-comment input {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    color: #202020;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #353535;
+    padding: 2px 0px;
+    margin: 20px 0px;
+    outline: none;
+    /*點擊時不要出現邊框*/
+}
+
+.p-comment textarea {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    color: #353535;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #353535;
+    outline: none;
+    /*點擊時不要出現邊框*/
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.p-comment button {
+    font-family: 'Mukta', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #ffc6d0;
+    border: 1px solid #353535;
+    transition: .3s;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.p-comment button:hover {
+    cursor: pointer;
+    color: #000000;
+    background: none;
+    background-color: #ffd6da;
+}
+
+/* 星等 */
+.rating {
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    /* width: 30px; */
+    /* background: rgba(94, 94, 94, 0.829); */
+}
+
+.rating label:before {
+    content: '★';
+    /* position: relative; */
+    display: block;
+    font-size: 25px;
+    color: #ebebeb;
+    margin-right: 5px;
+}
+
+.rating label:after {
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: rgb(243, 213, 114);
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}
+
+/* 評價紀錄 */
+.p-review {
+    width: 500px;
+    height: 100%;
+    min-height: 420px;
+    margin-left: 80px;
+    padding: 0px 30px 30px 30px;
+}
+
+.p-review h1 {
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 2px;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.p-review p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+}
+
+.viewbox {
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.v-name {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.v-star {
+    color: rgb(243, 213, 114);
+}
+
+.v-txt {
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+.v-mail,
+.v-phone {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-family: blackti;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+
+footer {
+
+    text-align: center;
+    font-size: 15px;
+    font-family: Adobe Caslon Pro;
+    background-color: #C3D6F2;
+    color: white;
+    padding: 10px;
+}
+.block{
+    justify-content: center;
+    display: flex;
+}

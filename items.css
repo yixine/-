@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: qi;
+    src: url(font/drechifont-monospaced.ttf);
+    src: url(font/drechifont-monospaced.woff);
+}
+
+@font-face {
+    font-family: blackti;
+    src: url(font/中黑體.ttc);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 網頁頂端藍色區塊 */
+nav {
+    background-color: #C3D6F2;
+    text-align: center;
+    padding: 14px;
+    font-family: Cooper Std;
+}
+
+/* 選單列文字 */
+nav a {
+    padding: 14px 25px;
+    display: inline-block;
+    color: white;
+}
+
+/* 選單列變色 */
+nav a:hover {
+
+    color: #789cce;
+
+}
+
+.nav_center li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_center {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav,
+ul,
+li,
+a {
+    color: black;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ITEMS子選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc6d0;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd6da
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav_right {
+    position: absolute;
+    right: 180px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+}
+.itemstitle h1 {
+    margin: 50px 0px 50px 0px;
+    font-family: qi;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+.items {
+    width: 1600px;
+    padding-left: 150px;
+}
+
+.itemsblock {
+    float: left;
+    width: 350px;
+    margin: 20px 50px 20px 0;
+}
+
+
+.productimg {
+
+    width: 350px;
+    height: 350px;
+}
+
+.productimg img {
+
+    transform: scale(1, 1);
+    transition: all .5s ease-out;
+    height: 350px;
+}
+
+.producttext {
+    margin: 5px auto;
+    text-align: center;
+    padding-top: 20px;
+    font-family: blackti;
+    font-size: 20px;
+    color: #2e2e2e;
+    justify-content: space-between;
+}
+
+.introduce {
+    font-family: blackti;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+    border: solid black 1px;
+    background-color: black;
+    cursor: pointer;
+    width: 350px;
+}
+
+.introduce a {
+    font-family: blackti;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* .qty {
+    width: 350px;
+    border: 1px solid black;
+} */
+
+/* .qty input,
+.quantity button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    height: 40px;
+    margin: 0px 3px;
+    text-align: center;
+} */
+
+
+
+
+/* .quantity span {
+    text-align: left;
+    margin-left: 260px;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+} */
+
+/* 
+.quant {
+    font-family: blackti;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border: solid black 1px;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #789cce;
+    cursor: pointer;
+    width: 350px;
+
+} */
+
+/* .minus,
+.add {
+    justify-content: space-between;
+    background-color: white;
+    width: 58px;
+    height: 42px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    font-weight: bolder;
+} */
+
+.clear {
+
+    clear: both;
+}
+
+.space {
+    margin-top: 30px;
+}
+
+footer {
+
+    text-align: center;
+    font-size: 15px;
+    font-family: Adobe Caslon Pro;
+    background-color: #C3D6F2;
+    color: white;
+    padding: 10px;
+}

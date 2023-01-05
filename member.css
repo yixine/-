@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+@font-face {
+    font-family: qi;
+    src: url(font/drechifont-monospaced.ttf);
+    src: url(font/drechifont-monospaced.woff);
+}
+
+@font-face {
+    font-family: blackti;
+    src: url(font/中黑體.ttc);
+}
+
+@font-face {
+    font-family: Cooper Std;
+    src: url(font/AnyConv.com__CooperBlackStd.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* 網頁頂端藍色區塊 */
+nav {
+    background-color: #C3D6F2;
+    text-align: center;
+    /* padding: 5%; */
+    font-family: Cooper Std;
+}
+
+/* 選單列文字 */
+nav a {
+    padding: 14px 25px;
+    display: inline-block;
+    color: white;
+}
+
+/* 選單列變色 */
+nav a:hover {
+
+    color: #789cce;
+
+}
+
+.nav_center li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_center {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav,
+ul,
+li,
+a {
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ITEMS子選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc6d0;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd6da
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav_right {
+    position: absolute;
+    right: 180px;
+}
+
+* {
+    margin: 0px;
+}
+
+.qatitle {
+    font-family: qi;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px;
+    /* margin-left: 150px; */
+}
+
+.block {
+    display: flex;
+    size: 100px;
+    background-color: #ffd6da;
+    border-radius: 1%;
+    padding: 3%;
+    line-height: 30px;
+    margin: 5%;
+    text-align: center;
+}
+
+.block_r {
+    float: right;
+    margin-right: 10%;
+}
+
+.block_l {
+    float: left;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+h2 {
+    font-family: Arial, cwTeXYen;
+    color: white;
+    font-size: 35px;
+    padding: 0px 0px 5px 5px;
+    margin-bottom: 20px;
+}
+
+.form1 {
+    color: white;
+}
+
+.form1 input {
+    height: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-bottom: solid rgb(248, 229, 229);
+    color: white;
+    outline-color: #d6606e;
+}
+
+.tr1 {
+    padding-left: 4%;
+    float: left;
+}
+
+
+.submit input {
+    width: 150px;
+    border: none;
+    background-color: #f9e7e9;
+    color: #d6606e;
+    font-size: 25px;
+    /* text-align: center; */
+    font-family: Arial, cwTeXYen;
+    border-radius: 5%;
+    margin-left: 3%;
+    margin-top: 74px
+}
+
+::placeholder {
+    color: #f1aeb6;
+}
+
+.submit input:hover {
+    background-color: #d6606e;
+    color: #f9e7e9;
+}
+
+.tpyetext,
+textarea {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border: 0.5px solid white;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    outline-style: none;
+}
+
+.space1 {
+    margin-top: 230px;
+}
+
+
+footer {
+
+    text-align: center;
+    font-size: 18px;
+    font-family: Adobe Caslon Pro;
+    background-color: #C3D6F2;
+    color: white;
+    padding: 5px;
+}

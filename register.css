@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: qi;
+    src: url(font/drechifont-monospaced.ttf);
+    src: url(font/drechifont-monospaced.woff);
+}
+
+@font-face {
+    font-family: blackti;
+    src: url(font/中黑體.ttc);
+}
+
+@font-face {
+    font-family: Cooper Std;
+    src: url(font/AnyConv.com__CooperBlackStd.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+* {
+    margin: 0px;
+}
+
+/* 網頁頂端藍色區塊 */
+nav {
+    background-color: #C3D6F2;
+    text-align: center;
+    padding: 14px;
+    font-family: Cooper Std;
+}
+
+/* 選單列文字 */
+nav a {
+    padding: 14px 25px;
+    display: inline-block;
+    color: white;
+}
+
+/* 選單列變色 */
+nav a:hover {
+
+    color: #789cce;
+
+}
+
+.nav_center li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_center {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav,
+ul,
+li,
+a {
+    color: black;
+    font-size: 17px;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ITEMS子選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffc6d0;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd6da
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav_right {
+    position: absolute;
+    right: 180px;
+}
+
+.register {
+    display: flex;
+    margin-top: 150px;
+    margin-left: 30%;
+    display: block;
+    width: 40%;
+    height: 550px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #3A4F7A;
+    background-color: #FFC6D3;
+    border-spacing: 10px;
+    box-shadow: 6px 4px 2px #444;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    margin-bottom: 150px;
+}
+
+
+.register h1 {
+    margin-bottom: 50px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Cooper Std;
+    font-size: 30px;
+    color: white;
+}
+
+.registertable {
+    text-align: center;
+    caption-side: bottom;
+    border-collapse: collapse;
+    display: table;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    margin: auto;
+}
+
+.register input {
+    width: 250px;
+}
+
+.buttonLOOK {
+    border: 0;
+    background-color: #E98EAD;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    display: inline;
+    font-family: blackti;
+}
+
+td {
+    text-align: center;
+}
+
+
+
+th {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding: 0.3em;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.login {
+    margin-top: 50px;
+    font-family: blackti;
+}
+
+.login a {
+    color: #3A4F7A;
+    text-decoration: underline;
+    font-family: blackti;
+}
+
+footer {
+
+    text-align: center;
+    font-size: 15px;
+    font-family: Adobe Caslon Pro;
+    background-color: #C3D6F2;
+    color: white;
+    padding: 10px;
+}

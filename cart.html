@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART_CHECK</title>
+    <link rel="stylesheet" href="cart_check.css">
+</head>
+
+<body>
+    <script>
+        function minusNUM(commodity) {
+            let value = Number(document.getElementsByClassName('num')[commodity].value);
+            if (value != 1) {
+                document.getElementsByClassName('num')[commodity].value = value - 1;
+            }
+        }
+        function addNUM(commodity) {
+            let value = Number(document.getElementsByClassName('num')[commodity].value);
+            document.getElementsByClassName('num')[commodity].value = value + 1;
+        }                       
+    </script>
+    <nav> <!-- 頂端選單列 -->
+        <ul class="nav_center">
+            <li><a href="home.html"><img src="image/HOME.png" style="width: 30px;"></a></li>
+            <li><a href="ABOUT US.html">ABOUT US</a></li>
+            <li><a href="CONTACT US.html">CONTACT US</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="shop.html">ITEMS</a>
+                    <div class="dropdown-content">
+                        <a href="OLENS.html">OLENS</a>
+                        <a href="LENSME.html">LENSME</a>
+                        <a href="I-DOL.html">I-DOL</a>
+                    </div>
+                </div>
+            <li><a href="MEMBER.html">MEMBER</a></li>
+            </li>
+            <li><a href="member.html" class="nav_member">LOG IN</a></li>
+            <li><a href="cart.html"><img src="image/CART.png" style="width: 30px;"></a></li>
+        </ul>
+    </nav>
+    <div class="bg">
+        <header>
+            <h1>購物小車車</h1>
+        </header>
+    </div>
+    <section class="check">
+        <div class="check-left">
+            <!-- <div id="myOrder">
+                <label>我的購物車車</label>
+            </div> -->
+            <hr>
+            <!-- 商品一 -->
+            <div class="item">
+                <div class="item-inside">
+                    <!-- 圖片 -->
+                    <div class="item_img">
+                        <a href>
+                            <img src="image/LENSME/Daily/preview/02.jpg" width="30%">
+                        </a>
+                        <div class="item-detail">
+                            <!-- 商品名 -->
+                            <label class="item-title">
+                                LENS ME Makeover Holive Gray
+                            </label>
+                            <!-- 日月拋 -->
+                            <div class="item_w">
+                                日拋
+                            </div>
+                            <!-- 單價 -->
+                            <div class="price">
+                                <p>NT$</p>
+                                <p class="price_tw">500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-span1">
+                        <div class="quantity">
+                            <div class="qty">
+                                <input type="button" class="minus" id="btn1" value="-" onclick="minusNUM(0),test(0),money()">
+                                <input type="text" class="num" name="num" id="num" value="1">
+                                <input type="button" class="add" id="btn2" value="+" onclick="addNUM(0),test(0),money()">
+                            </div>
+                            <div class="sum">
+                                <p>小結：</p><p>500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="bt"><p>X</p></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- 第二個商品 -->
+            <div class="item">
+                <div class="item-inside">
+                    <!-- 圖片 -->
+                    <div class="item_img">
+                        <a href>
+                            <img src="image/LENSME/Daily/preview/03.jpg" width="30%">
+                        </a>
+                        <div class="item-detail">
+                            <!-- 商品名 -->
+                            <label class="item-title">
+                                LENS ME Makeover Holive Brown
+                            </label>
+                            <!-- 日月拋 -->
+                            <div class="item_w">
+                                日拋
+                            </div>
+                            <!-- 單價 -->
+                            <div class="price">
+                                <p>NT$</p><p class="price_tw">500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-span1">
+                        <div class="quantity">
+                            <div class="qty">
+                                <input type="button" class="minus" id="btn1" value="-" onclick="minusNUM(1),test(1),money()">
+                                <input type="text" class="num" name="num" id="num" value="1">
+                                <input type="button" class="add" id="btn2" value="+" onclick="addNUM(1),test(1),money()">
+                            </div>
+                        </div>
+                        <div class="sum">
+                            <p>小結：</p><p>500</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn">
+                            <button class="bt"><p>X</p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="money">
+                <p>總金額:</p><p>1234</p> 
+                <!-- <input type="text"  class="total_money" id="money_total" value="0"> -->
+            </div>
+            <!-- <div class="submit">
+                <a href="enedd.html"><input type="submit" value="確認訂單" /></a>
+            </div> -->
+        </div>
+
+        </div>
+
+    </section>
+    <section class="recipient">
+        <div class="block1">
+            <div class="block">
+                <form method="post" action="">
+                    <div class="form1">
+                        <h2>訂購資料</h2>
+                        <p class="tr1">收件人姓名：</p><br>
+                        <input type="text" name id placeholder="RECIPIENT" /><br>
+                        <p class="tr1">電話號碼：</p><br>
+                        <input type="text" name id placeholder="PHONE" /><br>
+                        <p class="tr1">宅配地址：</p><Br>
+                        <input type="text" name id placeholder="ADRESS" /><Br>        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="送出訂單" />
+        </div>    
+    </section>  
+    <script>
+        // function cal() {
+        //     // bt1 = document.getElementById("bt1").value;
+        //     // bt2 = document.getElementById("bt2").value;
+        //     num = Number(document.getElementsByClassName("num")[0].value);
+        //     totals = 500 * num;
+        //     document.getElementsByClassName("pr_total")[0].value = totals;
+        // }
+        window.onload(test(0),test(1),money());
+
+        function test(commodity) {
+            var pr_nt = Number(document.getElementsByClassName("price_tw")[commodity].innerHTML);
+            var pr_num = Number(document.getElementsByClassName("num")[commodity].value);
+            document.getElementsByClassName("pr_total")[commodity].value = pr_nt * pr_num;
+        }
+        // function money(){
+        //     var total_money = Number(document.getElementById("money_total").value);
+        //     var pt_length = document.getElementsByClassName("pr_total").length;
+        //     for(var i=0 ; i<=pt_length-1 ;i++){
+        //         var money1 = Number(document.getElementsByClassName("pr_total")[i].innerHTML);
+        //         total_money = total_money + money1;
+        //         alert(total_money);
+        //     }
+        //     document.getElementById("money_total").value = total_money;
+        // }
+
+    </script>
+    <footer>
+        <p> Copyright © CYIM.</p>
+    </footer>
+</body>
+
+</html>

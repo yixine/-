@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBER｜視界</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+     <nav>  <!-- 頂端選單列 -->
+        <ul class="nav_center">
+            <li><a href="home.html"><img src="image/HOME.png" style="width: 30px;"></a></li>
+            <li><a href="ABOUTUS.html">ABOUT US</a></li>
+            <li><a href="CONTACT US.html">CONTACT US</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="shop.html">ITEMS</a>
+                    <div class="dropdown-content">
+                        <a href="OLENS.html">OLENS</a>
+                        <a href="LENSME.html">LENSME</a>
+                        <a href="I-DOL.html">I-DOL</a>
+                    </div>
+                </div>
+                <li><a href="MEMBER.html">MEMBER</a></li>
+            </li>
+            <li><a href="LOG IN.html" class="nav_member">LOG IN</a></li>
+            <li><a href="cart.html"><img src="image/CART.png" style="width: 30px;"></a></li>
+        </ul>
+      </nav>
+    <div class="qatitle">
+        <header>MEMBER</header>
+    </div>
+    <div >
+        <section class="block">
+            <!-- 切的板 -->
+            <div class="block_l">
+                <!-- 左邊的表格 -->
+                <form method="post" action="">
+                    <div class="form1">
+                        <h2>個人資料</h2>
+                        <p class="tr1">E_MAIL：</p> 
+                        <br>
+                        <input  class=email type="text" name id placeholder="USER_NAME" />
+                        <input type="text" name id placeholder="PHONE" />
+                        <input type="text" name id placeholder="ADRESS" />
+                       
+                    </div>
+                </form>
+            </div>    
+            <div class="block_r"> 
+                <!-- 右邊的表格 -->
+                <form method="post" action="">
+                    <div class="form1">
+                        <h2>帳號密碼</h2>
+                        <p class="tr1">ACCOUNT：</p>
+                        <tr><input type="text" name id placeholder="PASSWORD" /><br></tr>
+                        <tr><input type="text" name id placeholder="PASSWORD_CHECK" /><br></tr>
+                    </div>
+                    <div class="submit">
+                       <input type="button" value="確認修改" onclick="javascript:window.location.href='MEMBER_REVICE.html'"/>
+                    </div>
+            </div>
+            </form>
+        </section>
+    </div>
+    <!-- <section class="block">
+        <div class="form1">
+            <h2 style="text-align: center;">post</h2>
+            <form action="">
+                <input type="text" name id placeholder="Account"/><br>
+                <input type="text" name id placeholder="Password"/><br>
+                <textarea id="subject" name="subject" placeholder="Write your message here..."></textarea>
+            </form>
+        </div>
+
+    </section> -->
+    <p class="space1">
+        <!-- 增加底部空格 -->
+    </p>
+    <footer> 
+        <p> Copyright © CYIM.</p>
+    </footer>
+</body>
+</html>

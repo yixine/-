@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLENS｜視界</title>
+    <link rel="stylesheet" href="introduce.css">
+</head>
+<body>
+    <nav>  <!-- 頂端選單列 -->
+        <ul class="nav_center">
+            <li><a href="home.html"><img src="image/HOME.png" style="width: 30px;"></a></li>
+            <li><a href="ABOUTUS.html">ABOUT US</a></li>
+            <li><a href="CONTACT US.html">CONTACT US</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="shop.html">ITEMS</a>
+                    <div class="dropdown-content">
+                        <a href="OLENS.html">OLENS</a>
+                        <a href="LENSME.html">LENSME</a>
+                        <a href="I-DOL.html">I-DOL</a>
+                    </div>
+                </div>
+                <li><a href="MEMBER.html">MEMBER</a></li>
+            </li>
+            <li><a href="LOG IN.html" class="nav_member">LOG IN</a></li>
+            <li><a href="cart.html"><img src="image/CART.png" style="width: 30px;"></a></li>
+        </ul>
+      </nav>
+      <article>
+        <script>
+            function minusNUM(commodity){
+                let value = Number(document.getElementsByClassName('num')[commodity].value);
+                if (value != 1){
+                document.getElementsByClassName('num')[commodity].value=value-1;
+                }
+            }     
+            function addNUM(commodity){
+                let value = Number(document.getElementsByClassName('num')[commodity].value);
+                document.getElementsByClassName('num')[commodity].value=value+1;
+            }                       
+        </script>
+        <div class="title">
+            <h1>OLENS 日拋系列</h1>
+        </div>
+        <div class="introducebackground">
+            <div class="introduce">
+                <div class="imgblock">
+                    <div class="img">
+                        <img src="image/OLENS/Daily/preview/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="intro-main">
+                    <div class="name">
+                        <h1>OLENS</h1>
+                        <br>
+                        <!-- 品牌標題 -->
+                        <h2>ViVi Ring 1Day Brown</h2>
+                        <!-- 品項名稱 -->
+                    </div>
+                    <br>
+                    <p class="price">NT:500</p>
+                    <br>
+                    <p class="quantity">庫存數量：99</p>
+                    <br>
+                    <form action="">
+                        <div  class="diopters">
+                            <select name="diopters">
+                                <option>-0.00</option>
+                                <option>-1.00</option>
+                                <option>-1.25</option>
+                                <option>-1.50</option>
+                                <option>-1.75</option>
+                                <option>-2.00</option>
+                                <option>-2.25</option>
+                                <option>-2.50</option>
+                                <option>-2.75</option>
+                                <option>-3.00</option>
+                                <option>-3.25</option>
+                                <option>-3.50</option>
+                                <option>-3.75</option>
+                                <option>-4.00</option>
+                                <option>-4.25</option>
+                                <option>-4.50</option>
+                                <option>-4.75</option>
+                                <option>-5.00</option>
+                                <option>-5.50</option>
+                                <option>-6.00</option>
+                                <option>-6.50</option>
+                                <option>-7.00</option>
+                                <option>-7.50</option>
+                                <option>-8.00</option>
+                                <option>-8.50</option>
+                                <option>-9.00</option>
+                                <option>-9.50</option>
+                                <option>-10.00</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="flex">
+                            <div class="qty">
+                                <input type="button" class="minus" id="btn1" value="-" onclick="minusNUM(0)">
+                                <input type="text" class="num" name="num" id="num" value="1">
+                                <input type="button" class="add" id="btn2" value="+" onclick="addNUM(0)">         
+                            </div>
+                            <button type="submit" class="quant" onclick="javascript:alert('已加入購物車')">加入購物車</button>
+                        </div>
+                        <br>
+                        <div class="addto">
+                            <button type="submit" class="buy">立即購買</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </article>
+      <article>
+        <div class="block">
+            <div class="intro">
+                <div class="content">
+                    <h2>產品規格</h2>
+                    <p>弧度：8.7mm</p><br>
+                    <p>直徑：14.2mm</p><br>
+                    <p>著色直徑：13.0mm</p><br>
+                    <p>週期：日拋</p><br>
+                </div>
+            </div>
+        </div>
+      </article>
+      <article>
+        <div class="intro-back2">
+            <div class="p-comment">
+                <h1>COMMENT</h1>
+                <form action="">
+                    <input id="name" type="text" name="" placeholder="Name">
+                    <br>
+                    <input id="phone" type="text" name="" placeholder="Phone">
+                    <br>
+                    <input id="email" type="email" name="" placeholder="Email">
+                    <br>
+                    <p>Comment</p><textarea id="content" name="" placeholder=""></textarea>
+                    <div class="rating">
+                        <input type="radio" name="star" id="star1"><label for="star1"></label>
+                        <input type="radio" name="star" id="star2"><label for="star2"></label>
+                        <input type="radio" name="star" id="star3"><label for="star3"></label>
+                        <input type="radio" name="star" id="star4"><label for="star4"></label>
+                        <input type="radio" name="star" id="star5"><label for="star5"></label>
+                    </div>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="p-review">
+                <h1>REVIEW</h1>
+                    <div class="viewbox">
+                        <span class="v-name">芊小華</span> 
+                        <span class="v-star">★★★★★</span><br>
+                        <span class="v-mail">@gmail.com</span><br>
+                        <span class="v-phone">0900</span>
+                        <div class="v-txt"><p>顏色好多好喜歡</p></div>
+                    </div>
+                    <div class="viewbox">
+                        <span class="v-name">小蜜蜂</span> 
+                        <span class="v-star">★★★★★</span><br>
+                        <span class="v-mail">@gmail.com</span><br>
+                        <span class="v-phone">0900</span>
+                        <div class="v-txt"><p>商品品質良好，出速快!</p></div>
+                    </div>
+                    <div class="viewbox">
+                        <span class="v-name">潘美女</span> 
+                        <span class="v-star">★★★★</span><br>
+                        <span class="v-mail">@gmail.com</span><br>
+                        <span class="v-phone">0900</span>
+                        <div class="v-txt"><p>客服很好，會再次回購的!</p></div>
+                    </div>
+            </div>
+        </div>
+      </article>
+      <footer> 
+        <p> Copyright © CYIM.</p>
+    </footer>
+</body>
+</html>
